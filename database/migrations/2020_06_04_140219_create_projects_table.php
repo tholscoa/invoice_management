@@ -15,7 +15,15 @@ class CreateProjectsTable extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
+            $table->string('project_name');
+            $table->foreignId('client_id');
+            $table->date('start_date');
+            $table->date('duration');
+            $table->date('next_due_date');
+            $table->float('amount', 7, 2);
             $table->timestamps();
+
+            $table->foreign('client_id')->references('id')->on('clients');
         });
     }
 
