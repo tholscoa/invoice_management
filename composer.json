@@ -12,8 +12,11 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
+        "kepex/laravel-crud-generator": "^0.1.8",
         "laravel/framework": "^7.0",
-        "laravel/tinker": "^2.0"
+        "laravel/helpers": "^1.2",
+        "laravel/tinker": "^2.0",
+        "yajra/laravel-datatables-oracle": "^9.10"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', 'ClientController@client')->name('/');
+
+Route::get('/clients/grid', 'ClientsController@grid');
+Route::resource('/clients', 'ClientsController');
+
+Route::get('/projects/grid', 'ProjectsController@grid');
+Route::resource('/projects', 'ProjectsController');
