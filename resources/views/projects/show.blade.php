@@ -25,12 +25,12 @@
 
 
 
-        <div class="form-group">
+        {{-- <div class="form-group">
             <label for="id" class="col-sm-3 control-label">Id</label>
             <div class="col-sm-6">
                 <input type="text" name="id" id="id" class="form-control" value="{{$model->id}}" readonly="readonly">
             </div>
-        </div>
+        </div> --}}
 
 
         <div class="form-group">
@@ -44,7 +44,7 @@
         <div class="form-group">
             <label for="client_id" class="col-sm-3 control-label">Client</label>
             <div class="col-sm-6">
-                <input type="text" name="client_id" id="client_id" class="form-control" value="{{$model->clients->id}}" readonly="readonly">
+                <input type="text" name="client_id" id="client_id" class="form-control" value="{{$model->clients->client_name}}" readonly="readonly">
             </div>
         </div>
 
