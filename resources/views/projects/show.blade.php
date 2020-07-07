@@ -26,6 +26,7 @@
 
 
         {{-- <div class="form-group">
+            
             <label for="id" class="col-sm-3 control-label">Id</label>
             <div class="col-sm-6">
                 <input type="text" name="id" id="id" class="form-control" value="{{$model->id}}" readonly="readonly">

@@ -17,7 +17,13 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', 'ClientController@client')->name('/');
+Route::get('/', function(){
+    return view('welcome');
+});
+
+Route::get('/email', function(){
+    return view('email.notify');
+});
 
 Route::get('/clients/grid', 'ClientsController@grid');
 Route::resource('/clients', 'ClientsController');

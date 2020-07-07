@@ -43,7 +43,7 @@
             <div class="invoice">
                 <div class="two-col clearfix">
                     @yield('page-body')
-                    
+
 
 
                 </div>

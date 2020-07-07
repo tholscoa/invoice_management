@@ -24,7 +24,7 @@
                 <tr>
                                         <th>Id</th>
                                         <th>Project Name</th>
-                                        <th>Client</th>
+                                        <th>Client ID</th>
                                         <th>Start Date</th>
                                         <th>Duration</th>
                                         <th>Next Due Date</th>

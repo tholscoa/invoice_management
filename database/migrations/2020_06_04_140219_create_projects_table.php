@@ -18,9 +18,9 @@ class CreateProjectsTable extends Migration
             $table->string('project_name');
             $table->foreignId('client_id');
             $table->date('start_date');
-            $table->integer('duration');
+            // $table->integer('duration');
             $table->date('next_due_date');
-            $table->float('amount', 7, 2);
+            $table->float('amount', 10, 2);
             $table->timestamps();
 
             $table->foreign('client_id')->references('id')->on('clients');

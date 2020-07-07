@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 
 use App\Project;
 use App\Client;
-
+use DateTime;
 use DB;
 
 class ProjectsController extends Controller
@@ -20,9 +20,15 @@ class ProjectsController extends Controller
     //$this->middleware('auth');
   }
 
-
+// public function test(){
+//     $test = [1,2,3];
+//     $test2 = ['a','b','c'];
+//     return [$test, $test2];
+// }
   public function index(Request $request)
   {
+    // print_r($this->test()[1]);
+    // return;
     return view('projects.index', []);
   }
 
